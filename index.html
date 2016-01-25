@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <title>Map1.0</title>
+ <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD428SAbP1RnCvyF1IlhJQlSvewW6_cmqA&signed_in=true">
+    </script>
+  
+    <link rel="stylesheet" href="styles.css">
+  
+ <script  type = "text/javascript" src = "main.js"> </script>
+  
+  </head>
+  <body onload="initialize()">
+    
+  <div id="header"> 
+  
+    <div id ="Badgecase">
+    
+    <div id="b1" class = "drag" style="left:5px; background-size: contain; background-image: url('./images/badge1.jpg')"> </div>
+     <div id="b2" class = "drag" style="left:55px; background-size: contain; background-image: url('./images/badge2.jpg')"> </div>
+      <div id="b3" class = "drag" style="left:105px; background-size: contain; background-image: url('./images/badge3.jpg')"> </div>
+       <div id="b4" class = "drag" style="left:155px; background-size: contain; background-image: url('./images/badge4.jpg')"> </div>
+        <div id="b5" class = "drag" style="left:205px; background-size: contain; background-image: url('./images/badge5.jpg')"> </div>
+         <div id="b6" class = "drag" style="left:255px; background-size: contain; background-image: url('./images/badge6.jpg')"> </div>
+          <div id="b7" class = "drag" style="left:305px; background-size: contain; background-image: url('./images/badge7.jpg')"> </div>
+           <div id="b8" class = "drag" style="left:355px; background-size: contain; background-image: url('./images/badge8.jpg')"> </div>
+         
+      
+  <!-- <img src= "./images/badge8.jpg"> -->
+      
+      
+    </div>
+  
+  
+  
+             <form onchange ="sideBarFunction()">
+               <ul class = "sidebarOpLi">
+                 <li>
+            <input type="radio" id ="aAR" name ="sideBaroption" value = "AR">  
+           <label for ="aAR"> Account </label> </li>
+           <li>
+            <input type ="radio" id = "aLR" name ="sideBaroption" value = "LR" >
+            <label for = "aLR" > List </label>
+            </li>  </ul>
+            </form>
+            <input type="button" value="Toggle" id="toggle">
+         
+        </div>
+        
+    <div id="map"></div>
+        <div id="side_bar" >
+          <div id= "sidebarHeader">
+            
+          </div>
+          <div id = "accountInfo" hidden > 
+          ACCOUNT</div>
+          <div id = "listView" hidden >LISTS </div>
+          
+          
+         
+          
+        </div>
+  
+  </body>
+</html>
